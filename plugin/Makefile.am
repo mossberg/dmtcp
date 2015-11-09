@@ -112,3 +112,12 @@ __d_libdir__libdmtcp_unique_ckpt_so_SOURCES =                          \
 	unique-ckpt/unique-ckpt.cpp
 __d_libdir__libdmtcp_unique_ckpt_so_LDFLAGS = $(dmtcp_ldflags)
 __d_libdir__libdmtcp_unique_ckpt_so_LDADD = $(LDADD)
+
+#
+# Path virtualization plugin
+#
+libdmtcp_PROGRAMS += $(d_libdir)/libdmtcp_pathvirt.so
+__d_libdir__libdmtcp_pathvirt_so_SOURCES =                             \
+	pathvirt/pathvirt.cpp
+__d_libdir__libdmtcp_pathvirt_so_LDFLAGS = $(dmtcp_ldflags)
+__d_libdir__libdmtcp_pathvirt_so_LDADD = $(LDADD)
